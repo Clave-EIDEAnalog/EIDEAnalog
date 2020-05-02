@@ -1,3 +1,17 @@
+# -*- coding: utf-8 -*-
+
+#############################################################################
+#                                                                           #
+# EIDEAnalog library (excerpt). Class sensor                                #
+#                                                                           #
+# Librería EIDEAnalog (extracto). Clase sensor                              #
+# Ver 5.4.- Código de la clase sensor … en EIDEAnalog_ASI_SE_HIZO.pdf       #
+# para más información (https://github.com/Clave-EIDEAnalog/DOCS)           #
+#                                                                           #
+# Copyright (c) 2020. Clave Ingenieros S.L.;                                #
+# vicente.fombellida@claveingenieros.es                                     #
+#                                                                           #
+#############################################################################
 class sensor():
     """ Sensor information and readout calculation """
  

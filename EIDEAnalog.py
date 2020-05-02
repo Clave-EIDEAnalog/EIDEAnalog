@@ -1,8 +1,17 @@
 # -*- coding: utf-8 -*-
 
-"""
-
-"""
+#############################################################################
+#                                                                           #
+# EIDEAnalog library (Complete library. Release 0.0)                        #
+#                                                                           #
+# Librería EIDEAnalog (Librería completa. Versión 0.0)                      #
+# Ver EIDEAnalog_ASI_SE_HIZO.pdf                                            #
+# para más información (https://github.com/Clave-EIDEAnalog/DOCS)           #
+#                                                                           #
+# Copyright (c) 2020. Clave Ingenieros S.L.;                                #
+# vicente.fombellida@claveingenieros.es                                     #
+#                                                                           #
+#############################################################################
 
 import sys, os
 import time
@@ -168,7 +177,7 @@ class ADS1115(ADCBus):
     # “Done” bit
     done         = 0b1000000000000000
 
-                                    #O|MUX|PGA|M|DRT|COMPR
+                                        #O|MUX|PGA|M|DRT|COMPR
     reset        = 0b0000010110000000   #0|000|010|1|100|00000
     # Start conversion
     startConv    = 0b1000000000000000   #1|000|000|0|000|00000

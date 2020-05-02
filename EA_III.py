@@ -1,4 +1,17 @@
-# Import EIDEAnalog.
+# -*- coding: utf-8 -*-
+
+#############################################################################
+#                                                                           #
+# EIDEAnalog library (excerpt).                                             #
+#                                                                           #
+# Librería EIDEAnalog (extracto). Anexo III. Uso conjunto con EIDEGraphics  #
+# Ver Anexo III en EIDEAnalog_ASI_SE_HIZO.pdf                               #
+# para más información (https://github.com/Clave-EIDEAnalog/DOCS)           #
+#                                                                           #
+# Copyright (c) 2020. Clave Ingenieros S.L.;                                #
+# vicente.fombellida@claveingenieros.es                                     #
+#                                                                           #
+#############################################################################
 import EIDEAnalog
 # Import and instance EIDEGraphics
 import facade as EGClient

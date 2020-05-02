@@ -1,4 +1,19 @@
-# Import EIDEAnalog.
+# -*- coding: utf-8 -*-
+
+#############################################################################
+#                                                                           #
+# EIDEAnalog practising section                                             #
+# File: EA_8200_EXERCISEb.py                                                #
+#                                                                           #
+# Archivo: EA_8200_EXERCISEb.py                                             #
+# Librería EIDEAnalog (ejercicios de autoevaluación).                       #
+# Consulte punto 8.2.- Uso con clases intermedias …                         #
+# en EIDEAnalog_ASI_SE_HIZO.pdf (https://github.com/Clave-EIDEAnalog/DOCS)  #
+#                                                                           #
+# Copyright (c) 2020. Clave Ingenieros S.L.;                                #
+# vicente.fombellida@claveingenieros.es                                     #
+#                                                                           #
+#############################################################################
 import EIDEAnalog
 
 instancedSensors = []

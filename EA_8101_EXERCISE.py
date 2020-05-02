@@ -1,4 +1,19 @@
-# Import EIDEAnalog.
+# -*- coding: utf-8 -*-
+
+#############################################################################
+#                                                                           #
+# EIDEAnalog practising section                                             #
+# File: EA_8101_EXERCISE.py                                                 #
+#                                                                           #
+# Archivo: EA_8101_EXERCISE.py                                              #
+# Librería EIDEAnalog (ejercicios de autoevaluación).                       #
+# Consulte punto 8.1.1.- Istanciación directa de buses y sensores           #
+# en EIDEAnalog_ASI_SE_HIZO.pdf (https://github.com/Clave-EIDEAnalog/DOCS)  #
+#                                                                           #
+# Copyright (c) 2020. Clave Ingenieros S.L.;                                #
+# vicente.fombellida@claveingenieros.es                                     #
+#                                                                           #
+#############################################################################
 import EIDEAnalog
 
 # Instance bus and sensor.

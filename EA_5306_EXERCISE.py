@@ -1,3 +1,19 @@
+# -*- coding: utf-8 -*-
+
+#############################################################################
+#                                                                           #
+# EIDEAnalog practising section                                             #
+# File: EA_5306_EXERCISE.py                                                 #
+#                                                                           #
+# Archivo: EA_5306_EXERCISE.py                                              #
+# Librería EIDEAnalog (ejercicios de autoevaluación).                       #
+# Consulte punto 5.3.6.- Familia de clases agente de cálculo …              #
+# en EIDEAnalog_ASI_SE_HIZO.pdf (https://github.com/Clave-EIDEAnalog/DOCS)  #
+#                                                                           #
+# Copyright (c) 2020. Clave Ingenieros S.L.;                                #
+# vicente.fombellida@claveingenieros.es                                     #
+#                                                                           #
+#############################################################################
 
 class calculationAgent():
     

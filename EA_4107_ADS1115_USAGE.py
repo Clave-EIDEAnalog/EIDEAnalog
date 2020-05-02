@@ -2,13 +2,11 @@
 
 #############################################################################
 #                                                                           #
-# EIDEAnalog practising section                                             #
-# File: EA_5301_EXERCISEb.py                                                #
+# EIDEAnalog library (excerpt). Class ADS1115.                              #
 #                                                                           #
-# Archivo: EA_5301_EXERCISEb.py                                             #
-# Librería EIDEAnalog (ejercicios de autoevaluación).                       #
-# Consulte punto 5.3.1.- Agente de cálculo ‘binario’ (binaryAgent) …        #
-# en EIDEAnalog_ASI_SE_HIZO.pdf (https://github.com/Clave-EIDEAnalog/DOCS)  #
+# Librería EIDEAnalog (extracto). Clase ADS1115.                            #
+# Ver 4.1.7, ‘Instanciación … clase ADS1115’ en EIDEAnalog_ASI_SE_HIZO.pdf  #
+# para más información (https://github.com/Clave-EIDEAnalog/DOCS)           #
 #                                                                           #
 # Copyright (c) 2020. Clave Ingenieros S.L.;                                #
 # vicente.fombellida@claveingenieros.es                                     #
@@ -76,46 +74,8 @@ class ADS1115():
         valor = self.readWord(ADS1115.convReg)
         return valor
 
-
-class calculationAgent():
-    
-    def __init__(self, Vref, gain, zero, bits, twosC, table=None):
-        self.Vref = Vref
-        self.gain = gain
-        self.zero = zero
-        self.bits = bits
-        self.twosC = twosC
-        self.table = table
-
-    def convert(self):
-        pass
-
-class binaryAgent(calculationAgent):
-    
-    def __init__(self, Vref, gain, zero, bits, twosC, table=None):
-        calculationAgent.__init__(self, Vref, gain, zero, bits, twosC, None)
-        self.name = 'binary'
-
-    def binaryToDecimal(self, value):
-        if self.twosC:
-            # Two's complement format
-            value = value - int((value << 1) & 2**self.bits) # Int value
-            value = value / float(2**(self.bits - 1))
-        else:
-            value = value / float(2**self.bits)
-            
-        value = ((value * self.Vref) - self.zero) * self.gain
-        return value
-
-    def convert(self, value):
-        return self.binaryToDecimal(value)
-
-
-agent = binaryAgent(2.048, 1, 0, 16, True)
 myBus = ADS1115(0x48)
 myBus.singleShot()
 while not(myBus.ready()):
     pass
-print (agent.convert(myBus.readConversion()))
-
-
+print (myBus.readConversion())

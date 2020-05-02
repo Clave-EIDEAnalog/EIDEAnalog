@@ -1,3 +1,17 @@
+# -*- coding: utf-8 -*-
+
+#############################################################################
+#                                                                           #
+# EIDEAnalog library (excerpt). Calculation agents (classes)                #
+#                                                                           #
+# Librería EIDEAnalog (extracto). Clases ‘agentes de cálculo’               #
+# Ver 5.3.- Algoritmos de cálculo … en EIDEAnalog_ASI_SE_HIZO.pdf           #
+# para más información (https://github.com/Clave-EIDEAnalog/DOCS)           #
+#                                                                           #
+# Copyright (c) 2020. Clave Ingenieros S.L.;                                #
+# vicente.fombellida@claveingenieros.es                                     #
+#                                                                           #
+#############################################################################
 class calculationAgent():
     
     def __init__(self, Vref, gain, zero, bits, twosC, table=None):

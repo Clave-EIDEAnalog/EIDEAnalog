@@ -1,3 +1,19 @@
+# -*- coding: utf-8 -*-
+
+#############################################################################
+#                                                                           #
+# EIDEAnalog practising section                                             #
+# File: EA_6100_EXERCISEa.py                                                #
+#                                                                           #
+# Archivo: EA_6100_EXERCISEa.py                                             #
+# Librería EIDEAnalog (ejercicios de autoevaluación).                       #
+# Consulte punto 6.1.- Clase oneWire.                                       #
+# en EIDEAnalog_ASI_SE_HIZO.pdf (https://github.com/Clave-EIDEAnalog/DOCS)  #
+#                                                                           #
+# Copyright (c) 2020. Clave Ingenieros S.L.;                                #
+# vicente.fombellida@claveingenieros.es                                     #
+#                                                                           #
+#############################################################################
 import time
 import os
 import RPi.GPIO as GPIO
@@ -30,7 +46,7 @@ class oneWire():
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(pin, GPIO.OUT)
         GPIO.output(pin, True)
-        time.sleep(1)
+        time.sleep(14)
 
     def sensorsID(self):
         """ Construct and return a list with the sensors info. """

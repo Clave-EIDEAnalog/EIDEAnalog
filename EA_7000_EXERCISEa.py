@@ -1,3 +1,19 @@
+# -*- coding: utf-8 -*-
+
+#############################################################################
+#                                                                           #
+# EIDEAnalog practising section                                             #
+# File: EA_7000_EXERCISEa.py                                                #
+#                                                                           #
+# Archivo: EA_7000_EXERCISEa.py                                             #
+# Librería EIDEAnalog (ejercicios de autoevaluación).                       #
+# Consulte punto 7.- Tablas de sensores (sensorTable)                       #
+# en EIDEAnalog_ASI_SE_HIZO.pdf (https://github.com/Clave-EIDEAnalog/DOCS)  #
+#                                                                           #
+# Copyright (c) 2020. Clave Ingenieros S.L.;                                #
+# vicente.fombellida@claveingenieros.es                                     #
+#                                                                           #
+#############################################################################
 import os
 
 class sensorTable():

@@ -1,3 +1,19 @@
+# -*- coding: utf-8 -*-
+
+#############################################################################
+#                                                                           #
+# EIDEAnalog practising section                                             #
+# File: EA_7100_EXERCISE.py                                                 #
+#                                                                           #
+# Archivo: EA_7100_EXERCISE.py                                              #
+# Librería EIDEAnalog (ejercicios de autoevaluación).                       #
+# Consulte punto 7.1- Tablas de sensores. Conclusiones.                     #
+# en EIDEAnalog_ASI_SE_HIZO.pdf (https://github.com/Clave-EIDEAnalog/DOCS)  #
+#                                                                           #
+# Copyright (c) 2020. Clave Ingenieros S.L.;                                #
+# vicente.fombellida@claveingenieros.es                                     #
+#                                                                           #
+#############################################################################
 import os
 import time
 

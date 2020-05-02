@@ -2,16 +2,17 @@
 
 #############################################################################
 #                                                                           #
-# facade.py                                                                 #
+# EIDEAnalog library. facade.py. Wrapper module for EIDEGraphics.           #
+#                                                                           #
+# Librería EIDEAnalog. facade.py. Módulo de interface para EIDEGraphics.    #
+# Ver EIDEAnalog_ASI_SE_HIZO.pdf                                            #
+# para más información (https://github.com/Clave-EIDEAnalog/DOCS)           #
+#                                                                           #
+# Copyright (c) 2020. Clave Ingenieros S.L.;                                #
+# vicente.fombellida@claveingenieros.es                                     #
 #                                                                           #
 #############################################################################
 
-"""
-
-Wrapper for "EIDEGraphics" so the "client" module just has to import
-this code and instance EIDE.EIDEGraphics class to operate.
-
-"""
 
 
 import os
@@ -30,10 +31,8 @@ pygame.init()
 # Catch working directory ('../EIDEGraphics') and append it to
 # 'sys.path'
 cwd = os.getcwd()
-print ("facade.cwd1", os.getcwd())
 head = os.path.split(cwd)[0]
 os.chdir(head)
-print ("facade2.cwd1", os.getcwd())
 sys.path.append("/home/eide/Desktop/EIDE/EIDEGraphics")
 
 import EIDE
@@ -56,18 +55,11 @@ systemParameters = (
 ('project', 4),
 )
 
-
-##dirActual = os.getcwd()
-##os.chdir("/home/eide/Desktop/EIDE/EIDEGraphics")
 mainParser = EIDEParser.EIDEParser("/home/eide/Desktop/EIDE/EIDEGraphics",
     "EIDESystem.txt", systemParameters)
-##print ("facade.parserSections", mainParser.sections())
-##print ("facade.os.getcwd()", os.getcwd())
 project = mainParser.get('EIDESystem', 'project')
 
 # Add project path to 'sys.path'
 projectPath = os.path.join(os.path.join(head, 'PROJECTS_N_EXAMPLES'), project)
 sys.path.append(projectPath)
-##import example              # User program code mock.
-##os.chdir(dirActual)
 

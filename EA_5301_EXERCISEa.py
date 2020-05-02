@@ -1,3 +1,19 @@
+# -*- coding: utf-8 -*-
+
+#############################################################################
+#                                                                           #
+# EIDEAnalog practising section                                             #
+# File: EA_5301_EXERCISEa.py                                                #
+#                                                                           #
+# Archivo: EA_5301_EXERCISEa.py                                             #
+# Librería EIDEAnalog (ejercicios de autoevaluación).                       #
+# Consulte punto 5.3.1.- Agente de cálculo ‘binario’ (binaryAgent) …        #
+# en EIDEAnalog_ASI_SE_HIZO.pdf (https://github.com/Clave-EIDEAnalog/DOCS)  #
+#                                                                           #
+# Copyright (c) 2020. Clave Ingenieros S.L.;                                #
+# vicente.fombellida@claveingenieros.es                                     #
+#                                                                           #
+#############################################################################
 class calculationAgent():
     
     def __init__(self, Vref, gain, zero, bits, twosC, table=None):
