@@ -1,3 +1,4 @@
+### Chapters 7 & 8 issued (english)
 # EIDEAnalog
 
 
