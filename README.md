@@ -11,7 +11,7 @@ EIDEAnalog has been conceived for minimal effort.
 
 Either “Download” the library or “copy-paste” the desired file.
 
-A complete manual/”making of” can be found at https://github.com/Clave-EIDEAnalog/DOCS (EIDEAnalog_ASI_SE_HIZO.pdf).
+A complete manual/”making of” can be found at https://github.com/Clave-EIDEAnalog/DOCS (EIDEAnalog_MAKING_OF_v00).
 
 
 _______________________________________________________________________________________________________________________
